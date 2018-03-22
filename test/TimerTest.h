@@ -11,6 +11,8 @@
 #include "MockClock.h"
 #include "Timer.h"
 
+using mark_os::cycle::Cycle;
+
 class TimerTest : public ::testing::Test {
 protected:
     void SetUp() override;
