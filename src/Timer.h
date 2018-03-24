@@ -13,7 +13,7 @@
 #include "CycleListener.h"
 #include "Clock.h"
 
-class Timer : public CycleListener {
+class Timer : public mark_os::cycle::CycleListener {
     Pointer<List<TimerTask>> tasks{new LinkedList<TimerTask>()};
     Clock *clock;
 public:

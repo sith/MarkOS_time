@@ -16,4 +16,4 @@ target_include_directories(${PROJECT_NAME} PUBLIC src)
 
 add_subdirectory(test)
 install(DIRECTORY "src/"
-        DESTINATION "/Users/oleksandrabaukh/workspace/MarkOS/time")
+        DESTINATION "/Users/oleksandrabaukh/workspace/libs/MarkOS/time")
