@@ -24,7 +24,7 @@ Timer::Timer(Clock *clock) : clock(clock) {}
 
 void Timer::removeTasksForListener(TimerListener &timerListener) {
     auto iteratorPointer = tasks.get()->iterator();
-    Iterator<TimerTask> *iterator = iteratorPointer.get();
+    mark_os::commons::Iterator<TimerTask> *iterator = iteratorPointer.get();
     while (iterator->hasNext()) {
         TimerTask *timerTask = iterator->next();
         if (timerTask->getListener() == &timerListener) {

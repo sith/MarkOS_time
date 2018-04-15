@@ -14,7 +14,7 @@
 #include "Clock.h"
 
 class Timer : public mark_os::cycle::CycleListener {
-    Pointer<List<TimerTask>> tasks{new LinkedList<TimerTask>()};
+    Pointer<mark_os::commons::List<TimerTask>> tasks{new mark_os::commons::LinkedList<TimerTask>()};
     Clock *clock;
 public:
 
